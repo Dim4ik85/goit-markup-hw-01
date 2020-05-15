@@ -1,0 +1,187 @@
+/* белый фон background: #FFFFFF; */
+/* акцент голубой переход при нажатии color: #2196F3; */
+/* текст черный color: #212121; */
+/* почта,телефон,должности,текст под антеной  color: #757575; */
+/* фон Наша команда  background: #F5F4FA; */
+/* фон футера background: #2F303A; */
+/* фон #E5E5E5; */
+
+/* шрифты
+Raleway  bold - 700
+Roboto normal- 400, 500,bold - 700,900
+ */
+
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --second-grey-color: #F5F4FA;
+    --footer-color: #2F303A;
+    --features-color: #E5E5E5;
+}
+body {
+    background-color: var (--primary-white-color);
+   
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+/* убрали точки у ссылок */
+.list {
+    list-style: none;
+
+}
+/* Лого Веб Студия */
+.logo-web {
+    color: var(--accent-text-color);
+  }
+.logo {
+    color: var(--primary-text-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 0.03;
+  }
+  /* Навигация и телефон */
+.site-nav .link {
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.02;
+}
+/* Навигация по страницам */
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-text-color);
+}
+ .site-nav .link.current:focus {
+    color: var(--primary-text-color);
+}
+ /* Адрес и телефон */
+ .site-adress .link {
+    color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.02;
+ }
+ 
+ .site-adress .link:hover,
+ .site-adress .link:focus {
+     color: var(--accent-text-color);
+ }
+ /* Наша команда */
+ .team {
+    background-color: var(--second-grey-color);
+ }
+/* Button */
+ .button {
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+/* Фильтры в портфолио */
+.button-but {
+    color: var(--primary-text-color);
+    background-color: var(--title-text-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+ .button.primary:hover,
+ .button-but.secondary:hover {
+     background-color: var(--accent-text-color);
+     color: var(--primary-white-color);
+ }
+  /* Footer */
+  .footer {
+      background-color: var(--footer-color);
+  }
+  p.developer {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+  }
+  .features {
+      background-color: var(--features-color);
+  }
+  /* Банер */
+h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Features & Tasks */
+h3, h3.featur-f, .list.features {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+}
+p.featur-f {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: none;
+}
+/* чем мы занимаемся */
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+/* наша команда */
+h3.name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+/* Portfolio */
+.list-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+}
+.list-info {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.list-top {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+}
