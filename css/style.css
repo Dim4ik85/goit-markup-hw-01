@@ -10,14 +10,6 @@
 Raleway  bold - 700
 Roboto normal- 400, 500,bold - 700,900
  */
-html{
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
 
 :root {
     --primary-text-color: #212121;
@@ -27,20 +19,24 @@ html{
     --second-grey-color: #F5F4FA;
     --footer-color: #2F303A;
     --features-color: #E5E5E5;
-    --button-secondary-color:#F5F4FA;
 }
-body, button {
+body {
     background-color: var (--primary-white-color);
    
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
 /* убрали точки у ссылок */
+
 .list a {
     text-decoration: none;
 }
 .list {
     list-style: none;
+}
+.list {
+    list-style: none;
+
 }
 
 /* Лого Веб Студия */
@@ -50,6 +46,7 @@ body, button {
 .logo {
     color: var(--primary-text-color);
     text-decoration: none;
+
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
