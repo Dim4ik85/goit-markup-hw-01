@@ -20,7 +20,7 @@ Roboto normal- 400, 500,bold - 700,900
     --footer-color: #2F303A;
     --features-color: #E5E5E5;
 }
-body {
+body, button {
     background-color: var (--primary-white-color);
    
     font-family: 'Roboto', sans-serif;
@@ -32,11 +32,8 @@ body {
     text-decoration: none;
 }
 .list {
+    
     list-style: none;
-}
-.list {
-    list-style: none;
-
 }
 
 /* Лого Веб Студия */
