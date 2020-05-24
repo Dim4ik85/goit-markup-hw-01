@@ -30,12 +30,15 @@ body, button {
 
 .list a {
     text-decoration: none;
+    
 }
 .list {
     
     list-style: none;
 }
-
+.social {
+    list-style: none;
+}
 /* Лого Веб Студия */
 .logo-web {
     color: var(--accent-text-color);
@@ -168,7 +171,7 @@ h3, h3.featur-f {
     text-transform: uppercase;
 }
 p.featur-f {
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
     font-weight: 400;
     font-size: 14px;
     text-transform: none;
