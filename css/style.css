@@ -28,6 +28,7 @@ html{
     --second-grey-color: #F5F4FA;
     --footer-color: #2F303A;
     --features-color: #E5E5E5;
+    --clients-color: #AFB1B8;
 }
 body, button {
     background-color: var (--primary-white-color);
@@ -122,22 +123,24 @@ body, button {
     background-position: center;
     margin-right: 10px;
 } */
-.item-mail{
+.item-mail {
     margin-right: 10px;
     width: 16px;
     height: 11px;
-    fill: var(--primary-text-color);
+    cursor: pointer;
+    fill: var(--title-text-color);
 }
-.item .item-mail:hover, .item .item-mail:focus,
-.item .item-fon:hover, .item .item-fon:hover {
-    fill: var(--accent-color);
+.item-mail:hover, .item-mail:focus,
+.item-fon:hover, .item-fon:focus  {
+    fill: var(--accent-text-color);
 }
 
-.item-fon{
+.item-fon {
     margin-right: 10px;
     width: 10px;
     height: 15px;
-    fill: var(--primary-text-color);
+    cursor: pointer;
+    fill: var(--title-text-color);
 }
 /* .list-link.phone::before{
     content: "";
@@ -148,10 +151,10 @@ body, button {
     background-position: center;
     margin-right: 10px;
 } */
-/* img {
+img {
     display: block;
 }
-
+/*
 .img-header {
     margin-right: 10px;
 } */
@@ -320,22 +323,24 @@ li.point {
     width: calc((100% - 90px) / 4);
 }
 li.point .instrument {
-   display: inline-block;
-        
+   display: inline-block;  
 }
 .img-card {
-     background-color: var(--second-grey-color);
+    background-color: var(--second-grey-color);
     display: flex;
     justify-content: center;
     width: 270px;
     height: 120px;
     border-radius: 4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-
-
-/* .img-point {
-   
-} */
+.img-point {
+    width: 70px;
+    height: 70px;
+}
 
 h3.featur-f {
     margin-top: 30px;
@@ -378,8 +383,6 @@ h2.task {
     margin-top: 0px;
     margin-bottom: 50px;
 }
-
-
 h3.adds {
     padding-top: 27px;
     padding-bottom: 27px;
@@ -457,11 +460,7 @@ p.profi {
         margin-right: 30px;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-}
+
 .name {
     color: var(--primary-text-color);
     margin-top: 0px;
@@ -473,6 +472,33 @@ p.profi {
 }
 .comando .gatjet:not(:last-child) {
     margin-right: 10px
+}
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+.label {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* outline: none; */
+    fill: var(--clients-color);
+}
+.icon {
+    /* fill: currentColor; */
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.label:hover,
+.label:focus{
+    background-color: var(--accent-text-color);
+    fill: var(--primary-white-color);
 }
 /* Наши клиенті */
 .client {
@@ -488,18 +514,44 @@ p.profi {
     padding: 0px;
     margin: 0px;    
 }
-.client-img {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    width: 175px;
-    align-items: center;
-    height: 90px;
-}
-.list-client .client-img:not(:last-child) {
+
+.list-client .company:not(:last-child) {
     margin-right: 30px;
 }
+
+.company {
+    display: block;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--clients-color);
+    border-radius: 4px;
+    fill: var(--clients-color);
+}
+.company:hover, .company:focus {
+    fill: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color)
+}
+.logo1 {
+    padding: 20px 63px;
+}
+.logo2  {
+    padding: 19px 65px;
+}
+.logo3 {
+    padding: 24px 64px;
+}
+.logo4 {
+    padding: 24px 45px;
+}
+.logo5 {
+    padding: 22px 55px;
+}
+.logo6 {
+    padding: 22px 41px;
+}
+
+
+
 /* Footer */
 
 .footer-f {
@@ -584,7 +636,24 @@ p.profi {
 .aria-footer:not(:last-child) {
         margin-right: 10px;
 }
- .footer-f .container {
+
+.label-footer {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--primary-white-color);
+}
+.label-footer:hover,
+.label-footer:focus{
+    background-color: var(--accent-text-color); 
+}
+.footer-f .container {
     padding-bottom: 28px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }  
