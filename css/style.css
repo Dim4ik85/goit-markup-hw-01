@@ -653,7 +653,10 @@ p.profi {
   }
 
 /* Portfolio */
-
+.filter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .list-info {
     color: var(--primary-text-color);
     font-style: normal;
@@ -662,10 +665,9 @@ p.profi {
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin-top: 20px;
-    margin-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
+    width: 322px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .list-top {
     color: var(--title-text-color);
@@ -674,15 +676,29 @@ p.profi {
     font-size: 16px;
     line-height: 1.87;
 
-    margin-top: 0px;
-    margin-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-.filter {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    width: 322px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 4px;
+    margin-bottom: 0px;
     
+}
+/* Объединил Технокряк и Вебсайт
+ в один див и добавил рамку без верха*/
+.galery-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #eeeeee;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #eeeeee;
 }
 .button-b:not(:last-child) {
     margin-right: 8px;
@@ -693,11 +709,10 @@ p.profi {
     padding-left: 0px;
 }
 .card {
-
     width: calc((100% - 60px) / 3);
     background: var(--primary-white-color);
-    border: 1px solid #EEEEEE;
-    border-radius: 5px;
+    /*border: 1px solid #EEEEEE;
+     border-radius: 4px; */
 }
 .card-foto {
     display: block;
@@ -710,5 +725,7 @@ p.profi {
     margin-bottom: 30px;
 }
 .card:hover, .card:focus {
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                0px 1px 1px rgba(0, 0, 0, 0.12);
 }
